@@ -33,8 +33,9 @@ class EditUsuario extends Component
     protected function rules(){
         return[
             'usuario.nombre_usuario' => 'required|string',
+            'foto' => 'nullable|string',
             'usuario.email' => 'required|string',
-            'usuario.password' => 'required|string',
+            'usuario.password' => 'required|string'
         ];
     }
 }
