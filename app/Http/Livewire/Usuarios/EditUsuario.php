@@ -35,7 +35,7 @@ class EditUsuario extends Component
             'usuario.nombre_usuario' => 'required|string',
             'foto' => 'nullable|image',
             'usuario.email' => 'required|string',
-            'usuario.password' => 'required|string',
+            'usuario.password' => 'required|string'
         ];
     }
 }
