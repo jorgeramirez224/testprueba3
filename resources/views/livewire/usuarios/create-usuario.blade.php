@@ -40,7 +40,7 @@
 
                 <button wire:loading.attr="disabled" wire:target="foto" class="btn btn-success btn-sm">Guardar</button>
                 <a href="{{route('usuarios')}}" class="btn btn-secondary btn-sm">Regresar</a>
-            </form>
+            </div>
         </div>
-    </div>
+    </form>
 </div>

@@ -11,7 +11,7 @@
 
         <div class="card-body">
             <h5 class="card-title text-center">{{$usuario->nombre_usuario}}</h5>
-            <a class="card-title text-center">{{$usuario->email}}</a>
+            <p class="card-title text-center">{{$usuario->email}}</p>
             <a href="{{route('usuarios')}}" class="btn btn-secondary d-block">Regresar</a>
         </div>
     </div>

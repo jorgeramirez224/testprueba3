@@ -6,7 +6,6 @@ use App\Models\DatosUsuario;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use PDO;
 
 class CreateUsuario extends Component
 {
