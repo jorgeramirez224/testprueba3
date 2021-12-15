@@ -15,10 +15,10 @@ class CreateDatosUsuariosTable extends Migration
     {
         Schema::create('datos_usuarios', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre_usuario', 50);
+            $table->string('nombre_usuario');
             $table->string('foto')->nullable();
-            $table->string('email', 50);
-            $table->string('password', 100);
+            $table->string('email')->unique();
+            $table->string('password');
             $table->timestamps();
         });
     }

@@ -41,9 +41,15 @@
 
                 <div class="form-group">
                     <label>Password</label>
-                    <input wire:model.defer="usuario.password" type="password" class="form-control">
-                    @error('usuario.password') <span class="text-danger">{{$message}}</span>@enderror
+                    <input wire:model.defer="password" type="password" class="form-control">
+                    @error('password') <span class="text-danger">{{$message}}</span>@enderror
                 </div>
+
+                <div class="form-group">
+                    <label>Confirmar Password</label>
+                    <input autocomplete="new-password" wire:model="confirmar_password" type="password" class="form-control">
+                    @error('confirmar_password') <span class="text-danger">{{ $message }}</span>@enderror
+                  </div>
 
                 <button wire:loading.attr="disabled" wire:target="foto" type="submit" class="btn btn-success">Modificar</button>
                 <a href="{{route('usuarios')}}" type="submit" class="btn btn-secondary">Regresar</a>
