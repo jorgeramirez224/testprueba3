@@ -22,7 +22,8 @@
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">Nombre del Instrumento</th>
+            <th scope="col">Instrumento</th>
+            <th scope="col">Imagen</th>
             <th scope="col">Precio</th>
             <th scope="col">Marca</th>
             <th scope="col">Proveedor</th>
@@ -32,13 +33,15 @@
             @foreach ($instrumentos as $instrumento)
                 <tr>
                     <th scope="row">{{$instrumento->id}}</th>
-                    <td>{{$instrumento->nombre_ins}}</td>
+                    <td>{{$instrumento->nombre_instrumento}}</td>
                     <th>
                         <img style="width:50px; height:50px;"
                         src="{{Storage::disk('public')->url($instrumento->foto!=null ? $instrumento->foto : 'images/img_instrumentos/default.png')}}"
                         alt="">
                     </th>
-                    <td>{{$instrumento->email}}</td>
+                    <td>{{$instrumento->precio}}</td>
+                    <td>{{$instrumento->marca}}</td>
+                    <td>{{$instrumento->proveedor}}</td>
                     <td>
                         <a href="{{route('instrumentos.show', $instrumento)}}" title="Mostrar más"
                         class="btn-sm btn btn-secondary"><i class="fa fa-eye"></i></a>

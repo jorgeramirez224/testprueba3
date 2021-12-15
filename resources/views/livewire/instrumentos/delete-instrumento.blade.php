@@ -12,7 +12,7 @@
         <div class="card-body">
           <h5 class="card-title">{{$instrumento->nombre_instrumento}}</h5>
           <p class="card-title">{{$instrumento->marca}}</p>
-          <button wire:click="eliminarinstrumento" class="btn btn-danger btn-sm">Confirmar</button>
+          <button wire:click="eliminarInstrumento" class="btn btn-danger btn-sm">Confirmar</button>
           <a href="{{route('instrumentos')}}" class="btn btn-secondary btn-sm">Cancelar</a>
         </div>
 </div>

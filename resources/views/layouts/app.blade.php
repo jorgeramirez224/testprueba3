@@ -32,10 +32,13 @@
                             <a class="nav-link active" href="{{route('cursos')}}">Cursos</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link active" href="{{route('instrumentos')}}">Instrumentos</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" href="{{route('ventas')}}">Ventas</a>
                         </li>
 
-                        <div style="margin-left: 825px;">
+                        <div style="margin-left: 725px;">
                             @livewire('login.logout')
                         </div>
                     </ul>

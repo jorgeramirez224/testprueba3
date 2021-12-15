@@ -27,20 +27,20 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Email</label>
+                    <label>Precio</label>
                     <input wire:model="instrumento.precio" type="text" class="form-control">
                     @error('instrumento.precio') <span class="text-danger">{{ $message }}</span>@enderror
                   </div>
 
 
                 <div class="form-group">
-                    <label>Email</label>
+                    <label>Marca</label>
                     <input wire:model="instrumento.marca" type="text" class="form-control">
                     @error('instrumento.marca') <span class="text-danger">{{ $message }}</span>@enderror
                 </div>
 
                 <div class="form-group">
-                    <label>Email</label>
+                    <label>Proveedor</label>
                     <input wire:model="instrumento.proveedor" type="text" class="form-control">
                     @error('instrumento.proveedor') <span class="text-danger">{{ $message }}</span>@enderror
                 </div>

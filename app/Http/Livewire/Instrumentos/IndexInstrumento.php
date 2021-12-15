@@ -15,7 +15,7 @@ class IndexInstrumento extends Component
 
     public function render()
     {
-        $instrumentos = ($this->cargado == True) ? Instrumento::where('instrumentos', 'LIKE', '%' . $this->search . '%')
+        $instrumentos = ($this->cargado == True) ? Instrumento::where('nombre_instrumento', 'LIKE', '%' . $this->search . '%')
         ->paginate(10) : [];
         return view('livewire.instrumentos.index-instrumento', compact('instrumentos'));
     }

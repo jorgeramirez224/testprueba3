@@ -23,8 +23,8 @@ class VentasCreate extends Component
     }
 
     public function crearVenta(){
-        $this->validate();
         $this->venta->save();
+        $this->validate();
         $this->emit('alerta-crear-venta', 'Se creo con exito la venta');
 
     }
