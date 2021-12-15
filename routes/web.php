@@ -5,6 +5,11 @@ use App\Http\Livewire\Cursos\DeleteCurso;
 use App\Http\Livewire\Cursos\EditCurso;
 use App\Http\Livewire\Cursos\IndexCursos;
 use App\Http\Livewire\Cursos\ShowCurso;
+use App\Http\Livewire\Instrumentos\CreateInstrumento;
+use App\Http\Livewire\Instrumentos\DeleteInstrumento;
+use App\Http\Livewire\Instrumentos\EditInstrumento;
+use App\Http\Livewire\Instrumentos\IndexInstrumento;
+use App\Http\Livewire\Instrumentos\ShowInstrumento;
 use App\Http\Livewire\Login\Login;
 use App\Http\Livewire\Usuarios\CreateUsuario;
 use App\Http\Livewire\Usuarios\DeleteUsuario;
@@ -24,6 +29,12 @@ Route::group(['middleware'=>'auth'], function(){
     Route::get('/cursos/{curso}/show', ShowCurso::class)->name('cursos.show');
     Route::get('/cursos/{curso}/edit', EditCurso::class)->name('cursos.edit');
     Route::get('/cursos/{curso}/delete', DeleteCurso::class)->name('cursos.delete');
+
+    Route::get('/instrumentos', IndexInstrumento::class)->name('instrumentos');
+    Route::get('/instrumentos/crear', CreateInstrumento::class)->name('instrumentos.crear');
+    Route::get('/instrumentos/{instrumento}/show', ShowInstrumento::class)->name('instrumentos.show');
+    Route::get('/instrumentos/{instrumento}/edit', EditInstrumento::class)->name('instrumentos.edit');
+    Route::get('/instrumentos/{instrumento}/delete', DeleteInstrumento::class)->name('instrumentos.delete');
 
     Route::get('/usuarios', IndexUsuarios::class)->name('usuarios');
     Route::get('/usuarios/crear', CreateUsuario::class)->name('usuarios.crear');
